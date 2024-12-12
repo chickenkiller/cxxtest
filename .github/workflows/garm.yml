@@ -2,6 +2,9 @@ name: GARM test workflow
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
 jobs:
   garm:
     runs-on: [ ubuntu ]
