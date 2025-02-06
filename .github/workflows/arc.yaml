@@ -11,6 +11,8 @@ jobs:
     - run: echo "🎉 This job uses runner scale set runners!"
     - uses: actions/checkout@v4.2.2
     - uses: actions/setup-python@v5.4.0
+      with:
+        python-version: 3.12
     - run: |
         cd test
-        python test_cxxtest.py
+        python3 test_cxxtest.py
