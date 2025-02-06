@@ -9,3 +9,9 @@ jobs:
     container: ubuntu
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
+    - run: |
+        ls -l /
+        ls -l /__w
+        ls -l $PWD
+        id
+        env
