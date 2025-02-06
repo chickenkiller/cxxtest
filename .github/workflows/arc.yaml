@@ -9,9 +9,7 @@ jobs:
     container: gcc
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
+    - uses: actions/setup-python@v5.4.0
     - run: |
-        ls -l /
-        ls -l /__w
-        ls -l $PWD
-        id
-        env
+        cd test
+        python test_cxxtest.py
